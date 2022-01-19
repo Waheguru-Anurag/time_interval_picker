@@ -43,3 +43,6 @@ Import the package in your Dart Code
         onChanged: (DateTime? startTime, DateTime? endTime, bool isAllDay) {},
     ),
 ```
+
+## License
+The project is licensed under `MIT License`.
