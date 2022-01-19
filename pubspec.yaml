@@ -1,8 +1,8 @@
 name: time_interval_picker
 description: Integrate a Custom Time Interval Picker with ease in your dart code.
-version: 0.0.1
-homepage: https://github.com/Waheguru-Anurag/schedule_picker/
-issue_tracker: https://github.com/Waheguru-Anurag/schedule_picker/issues/
+version: 0.0.2
+homepage: https://github.com/Waheguru-Anurag/time_interval_picker/
+issue_tracker: https://github.com/Waheguru-Anurag/time_interval_picker/issues/
 maintainer: Anurag Bansal (@WaheguruAnurag)
 
 environment:
