@@ -13,12 +13,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
-  intl: ^0.17.0
+  intl: ^0.18.1
   equatable: ^2.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^3.0.1
 
 flutter:

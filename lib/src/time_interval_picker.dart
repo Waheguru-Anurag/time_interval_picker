@@ -22,7 +22,7 @@ class TimeIntervalPicker extends StatefulWidget {
     this.contentPadding,
     this.borderRadius = 8,
     this.dropdownTextStyle,
-    this.seperatorWidget,
+    this.separatorWidget,
   }) : super(key: key);
 
   /// [startLimit] is the time value for [StartDropdown]
@@ -57,8 +57,8 @@ class TimeIntervalPicker extends StatefulWidget {
   /// TextStyle for [DropdownMenuItem]
   final TextStyle? dropdownTextStyle;
 
-  /// Widget seperating [StartDropdown] and [EndDropdown]
-  final Widget? seperatorWidget;
+  /// Widget separating [StartDropdown] and [EndDropdown]
+  final Widget? separatorWidget;
 
   /// Function returning
   ///
@@ -144,7 +144,7 @@ class TimeIntervalPickerState extends State<TimeIntervalPicker> {
               const SizedBox(
                 width: 8,
               ),
-              widget.seperatorWidget ?? const Text('to'),
+              widget.separatorWidget ?? const Text('to'),
               const SizedBox(
                 width: 8,
               ),
