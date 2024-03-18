@@ -39,7 +39,7 @@ class FullTouchDropdownState extends State<FullTouchDropdown> {
       style: TextButton.styleFrom(
         padding: EdgeInsets.zero,
         shadowColor: LibColors.transparent,
-        primary: LibColors.white,
+        backgroundColor: LibColors.white,
       ),
       onPressed: () {
         if (!widget.enabled) return;
