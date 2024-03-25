@@ -6,7 +6,7 @@ issue_tracker: https://github.com/Waheguru-Anurag/time_interval_picker/issues/
 maintainer: Anurag Bansal (@WaheguruAnurag)
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.3.2 <4.0.0'
   flutter: ">=3.0.0"
 
 dependencies:

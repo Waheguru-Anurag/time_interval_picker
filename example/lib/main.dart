@@ -13,11 +13,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Time Interval Picker',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.from(
-          colorScheme: const ColorScheme.light(
-        primary: Colors.blue,
-        background: Colors.white,
-      )).copyWith(
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          primary: Colors.blue,
+          brightness: Brightness.dark,
+          background: Colors.white,
+        ),
+        useMaterial3: true,
         scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -41,7 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(widget.title),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Text(widget.title, style: const TextStyle(color: Colors.white)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30),
