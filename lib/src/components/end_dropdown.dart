@@ -5,7 +5,7 @@ import 'full_touch_dropdown.dart';
 
 class EndDropdown extends StatelessWidget {
   const EndDropdown({
-    Key? key,
+    super.key,
     required this.time,
     required this.onChanged,
     this.filled,
@@ -17,7 +17,7 @@ class EndDropdown extends StatelessWidget {
     this.enabled = true,
     this.length = 24,
     this.limit,
-  }) : super(key: key);
+  });
 
   final DateTime time;
 

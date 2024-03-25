@@ -1,24 +1,24 @@
 name: time_interval_picker
 description: Integrate a Custom Time Interval Picker with ease in your dart code.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Waheguru-Anurag/time_interval_picker/
 issue_tracker: https://github.com/Waheguru-Anurag/time_interval_picker/issues/
 maintainer: Anurag Bansal (@WaheguruAnurag)
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=3.3.2 <4.0.0'
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
-  intl: ^0.17.0
-  equatable: ^2.0.3
+  flutter_bloc: ^8.1.5
+  intl: ^0.19.0
+  equatable: ^2.0.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^3.0.1
 
 flutter:

@@ -9,6 +9,5 @@ abstract class TimeIntervalState extends Equatable {
 }
 
 class TimeIntervalInitial extends TimeIntervalState {
-  const TimeIntervalInitial({required TimeInterval interval})
-      : super(interval: interval);
+  const TimeIntervalInitial({required super.interval});
 }
