@@ -6,16 +6,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Time Interval Picker',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        backgroundColor: Colors.white,
+      theme: ThemeData.from(
+          colorScheme: const ColorScheme.light(
+        primary: Colors.blue,
+        background: Colors.white,
+      )).copyWith(
         scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -46,7 +48,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: TimeIntervalPicker(
           endLimit: null,
           startLimit: null,
-          onChanged: (DateTime? startTime, DateTime? endTime, bool isAllDay) {},
+          onChanged: (DateTime? startTime, DateTime? endTime, bool isAllDay) {
+            print(startTime);
+            print(endTime);
+            print(isAllDay);
+          },
         ),
       ),
     );

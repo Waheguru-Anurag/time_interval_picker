@@ -10,7 +10,7 @@ import 'components/start_dropdown.dart';
 
 class TimeIntervalPicker extends StatefulWidget {
   const TimeIntervalPicker({
-    Key? key,
+    super.key,
     required this.endLimit,
     required this.startLimit,
     required this.onChanged,
@@ -23,7 +23,7 @@ class TimeIntervalPicker extends StatefulWidget {
     this.borderRadius = 8,
     this.dropdownTextStyle,
     this.seperatorWidget,
-  }) : super(key: key);
+  });
 
   /// [startLimit] is the time value for [StartDropdown]
   final DateTime? startLimit;

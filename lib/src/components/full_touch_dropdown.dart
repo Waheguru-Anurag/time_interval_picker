@@ -4,7 +4,7 @@ import '../core/colors.dart';
 
 class FullTouchDropdown extends StatefulWidget {
   const FullTouchDropdown({
-    Key? key,
+    super.key,
     required this.value,
     required this.onChanged,
     this.enabled = false,
@@ -14,7 +14,7 @@ class FullTouchDropdown extends StatefulWidget {
     this.borderRadius = 8,
     this.contentPadding,
     this.items,
-  }) : super(key: key);
+  });
 
   final int value;
   final bool enabled;
